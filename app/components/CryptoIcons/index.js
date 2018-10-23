@@ -12,6 +12,7 @@ import NEOIcon from './neo.svg';
 import OMGIcon from './omg.svg';
 import WAVESIcon from './waves.svg';
 import KNCIcon from './knc.svg';
+import KMDICEIcon from './kmdice.svg';
 import EOSIcon from './eos.svg';
 import BNBIcon from './bnb.svg';
 import BCHIcon from './bch.svg';
@@ -38,6 +39,7 @@ export {
   BNBIcon as BNB,
   EOSIcon as EOS,
   KNCIcon as KNC,
+  KMDICEIcon as KMDICE,
   LTCIcon as LTC,
   NEOIcon as NEO,
   OMGIcon as OMG,
@@ -67,6 +69,7 @@ const coins = {
   bnb: BNBIcon,
   eos: EOSIcon,
   knc: KNCIcon,
+  kmdice: KMDICEIcon,
   ltc: LTCIcon,
   neo: NEOIcon,
   omg: OMGIcon,
@@ -94,6 +97,7 @@ const coins = {
   BNB: BNBIcon,
   EOS: EOSIcon,
   KNC: KNCIcon,
+  KMDICE: KMDICEIcon,
   LTC: LTCIcon,
   NEO: NEOIcon,
   OMG: OMGIcon,
@@ -123,6 +127,7 @@ const coinsRender = {
   bnb: <BNBIcon />,
   eos: <EOSIcon />,
   knc: <KNCIcon />,
+  kmdice: <KMDICEIcon />,
   ltc: <LTCIcon />,
   neo: <NEOIcon />,
   omg: <OMGIcon />,
@@ -150,6 +155,7 @@ const coinsRender = {
   BNB: <BNBIcon />,
   EOS: <EOSIcon />,
   KNC: <KNCIcon />,
+  KMDICE: <KMDICEIcon />,
   LTC: <LTCIcon />,
   NEO: <NEOIcon />,
   OMG: <OMGIcon />,
