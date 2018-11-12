@@ -1,8 +1,8 @@
 module.exports = {
-  coin: 'DSEC',
-  name: 'DEVSEC',
-  asset: 'DSEC',
-  rpcport: 11557,
+  coin: 'CC',
+  name: 'CoinCollect',
+  asset: 'CCL',
+  rpcport: 20849,
   electrumServers: [
     {
       host: 'electrum1.cipig.net',
