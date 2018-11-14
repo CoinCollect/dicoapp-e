@@ -2,10 +2,10 @@
 
 Use this app to buy CoinCollect coins with Komodo or Bitcoin.
 
-- What is this app?
-- How do I run this app?
-- Troubleshooting
-- Useful links
+- [What is this app?](#what-is-this-app)
+- [How do I run this app?](#how-do-i-run-this-app)
+- [Troubleshooting](#troubleshooting)
+- [Useful links](#useful-links)
 
 ## What is this app?
 
@@ -13,35 +13,35 @@ This app implements BarterDEX for doing decentralized ICO's, dICO's. It's config
 
 ## How do I run this app?
 
-First, install basic dependencies:
+First, install basic **dependencies**:
 
     sudo apt install git curl libc6-i386 libgconf-2-4
 
-Then, make sure you have the right node version:
+Then, make sure you have the right **node** version:
 
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
-    Exit from the current terminal and start another terminal window and enter the following.
+(exit from the current terminal and start another terminal window and enter the following)
 
     nvm install 9.11.2
     nvm use 9.11.2
 
-Next, install the yarn package manager:
+Next, install the **yarn** package manager:
 
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 
-Almost there. Clone this repository to your computer:
+Almost there. **Clone** this repository to your computer:
 
     git clone https://github.com/CoinCollect/dicoapp-e
     cd dicoapp-e
 
-Install packages:
+Install **packages**:
 
     yarn install
 
-And finally, run the app:
+And finally, **run the app**:
 
     yarn start
 
