@@ -19,15 +19,15 @@ First, install basic **dependencies**:
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-    brew install git curl libc6-i386 libgconf-2-4
+    brew install git curl libgconf-2-4
 
 Then, make sure you have the right **node** version:
 
     brew install nvm
 
-    echo 'export NVM_DIR=~/.nvm' >> ~/.bashrc
+    echo 'export NVM_DIR=~/.nvm' >> ~/.bashrc_profile
 
-    echo 'source $(brew --prefix nvm)/nvm.sh' >> ~/.bashrc
+    echo 'source $(brew --prefix nvm)/nvm.sh' >> ~/.bashrc_profile
 
 (exit from the current terminal and start another terminal window and enter the following)
 
@@ -64,6 +64,8 @@ Then, make sure you have the right **node** version:
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
 (exit from the current terminal and start another terminal window and enter the following)
+
+/usr/local/opt/nvm/nvm.sh use 9.11.2
 
     nvm install 9.11.2
     nvm use 9.11.2
