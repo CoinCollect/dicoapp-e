@@ -73,9 +73,9 @@ class HelpPage extends Component<Props> {
                 </li>
                 <li>
                   After the BUY tab is activated, you must input the amount of
-                  funds you want to spend on GLX Token. For this demonstration
-                  we will use buy 0.1 KMD of GLX Token. In the crowdfund you
-                  will have pre-set minimum and maximum amounts per swap. After
+                  funds you want to spend on CC Token. For this demonstration we
+                  will use buy 0.1 KMD of CC Token. In the crowdfund you will
+                  have pre-set minimum and maximum amounts per swap. After
                   typing the amount click BUY. A popup will tell you that the
                   BUY function will be locked for 3 minutes.
                 </li>
@@ -88,17 +88,16 @@ class HelpPage extends Component<Props> {
             </Typography>
             <Typography variant="title" gutterBottom>
               For more information and technical assistance please watch the
-              instructional video below and join the GLX Token (GLXT) chat group
-              at GLX.com:
+              instructional video and join the CoinCollect Discord.
             </Typography>
             <ol>
               <li>
                 <a
-                  href="https://glx.li/chat"
+                  href="https://discord.gg/tYvguCv"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GLX Token Chat Group Instruction Video
+                  CoinCollect Discord
                 </a>
               </li>
             </ol>
