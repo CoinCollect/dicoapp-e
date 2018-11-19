@@ -306,7 +306,8 @@ class AmountSection extends Component<Props, State> {
 
       const bestPrice = this.getBestPrice();
       const paymentInput = this.paymentInput.current;
-      await paymentInput.setValue(base * bestPrice);
+      const komodoFee = 0.0001; // Add a little bit of fee to the payment amount
+      await paymentInput.setValue(base * bestPrice + komodoFee);
     } catch (err) {
       this.controlBuyButton(true);
       debug(`onChangeInput: ${err.message}`);
