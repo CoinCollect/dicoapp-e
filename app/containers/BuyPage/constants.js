@@ -26,7 +26,7 @@ export const STATE_SWAPS = [
   'Seller Deposit',
   'Buyer Payment',
   'Seller Payment',
-  'Swap Finished' // 'Alice Spend'
+  'Swap Finished! Congratulations!' // 'Alice Spend'
 ];
 
 // https://github.com/KomodoPlatform/Documentation/blob/master/docs/source/barterDEX/MarketmakerErrors.rst#marketmaker-error-codes
