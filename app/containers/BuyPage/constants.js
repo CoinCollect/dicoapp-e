@@ -23,9 +23,9 @@ export const TIME_LOOP = 20000;
 export const STATE_SWAPS = [
   'Confirming',
   'My Fee',
-  'Bob Deposit',
-  'Alice Payment',
-  'Bob Payment',
+  'Seller Deposit',
+  'Buyer Payment',
+  'Seller Payment',
   'Swap Finished' // 'Alice Spend'
 ];
 
