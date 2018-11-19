@@ -144,7 +144,7 @@ class CoinSelectable extends PureComponent<Props> {
         onClick={this.onClick}
       >
         <span className={classes.btn__content}>
-          {icon}
+          <div style={{ width: '32px' }}>{icon}</div>
           {title && (
             <Typography
               component="div"
