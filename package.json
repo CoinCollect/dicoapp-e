@@ -245,6 +245,7 @@
     "immutable": "^3.8.2",
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.10",
     "qrcode.react": "^0.8.0",
     "react": "^16.5.0",
