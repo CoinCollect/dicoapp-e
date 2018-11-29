@@ -177,7 +177,7 @@ class BuyPage extends Component<Props, State> {
                 gutterBottom
                 className={classes.cardContent__title}
               >
-                <p style={{ fontSize: '16px' }}>
+                <p style={{ fontSize: '16px', width: 'calc(100% - 20px)' }}>
                   You can buy CoinCollect with KMD or BTC. KMD swaps are fast &
                   cheap. BTC swaps have a higher transaction fee. We recommend
                   to use BTC for bigger transaction amounts only.
