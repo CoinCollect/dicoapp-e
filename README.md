@@ -91,6 +91,10 @@ And finally, **run the app**:
 
 That's it. You now have the dicoapp running, ready to use.
 
+## Packaging
+
+Read [docs/packaging.md](docs/packaging.md) for information on packaging the app for Linux, MacOS & Windows.
+
 ## Troubleshooting
 
 ### "Network error"
