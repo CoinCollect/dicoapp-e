@@ -306,8 +306,7 @@ class AmountSection extends Component<Props, State> {
 
       const bestPrice = this.getBestPrice();
       const paymentInput = this.paymentInput.current;
-      const komodoFee = 0.0001; // Add a little bit of fee to the payment amount
-      await paymentInput.setValue(base * bestPrice + komodoFee);
+      await paymentInput.setValue(base * bestPrice);
     } catch (err) {
       this.controlBuyButton(true);
       debug(`onChangeInput: ${err.message}`);
@@ -533,14 +532,14 @@ class AmountSection extends Component<Props, State> {
             onClick={this.clickProcessButton}
           >
             {swapsLoading && <React.Fragment>Loading...</React.Fragment>}
-            {!swapsLoading &&
-              swapsError && <React.Fragment>Cancel</React.Fragment>}
-            {!swapsLoading &&
-              !swapsError && (
-                <FormattedMessage id="dicoapp.containers.BuyPage.swap_successful_message">
-                  {(...content) => content}
-                </FormattedMessage>
-              )}
+            {!swapsLoading && swapsError && (
+              <React.Fragment>Cancel</React.Fragment>
+            )}
+            {!swapsLoading && !swapsError && (
+              <FormattedMessage id="dicoapp.containers.BuyPage.swap_successful_message">
+                {(...content) => content}
+              </FormattedMessage>
+            )}
           </BuyButton>
         </Grid>
       </Grid>
