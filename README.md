@@ -11,7 +11,24 @@ Use this app to buy CoinCollect coins with Komodo or Bitcoin.
 
 This app implements BarterDEX for doing decentralized ICO's, dICO's. It's configured for buying CC with KMD or BTC.
 
-## How do I run this app?
+## How do I download this app
+
+**Linux**
+
+Download and install one of the following:
+
+- [AppImage](https://www.coincollect.cc/download/dICOApp-0.9.0.AppImage)
+- [deb](https://www.coincollect.cc/download/dicoapp-e_0.9.0_amd64.deb)
+
+**MacOS**
+
+- ...
+
+**Windows**
+
+- ...
+
+## How do I run this app on my dev machine
 
 ### On MacOS
 
