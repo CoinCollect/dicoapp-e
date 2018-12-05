@@ -26,7 +26,7 @@ Download and install one of the following:
 
 **Windows**
 
-- ...
+- [Download exe](https://www.coincollect.cc/download/dICOApp-Setup-0.9.0.exe)
 
 ## How do I run this app on my dev machine
 
