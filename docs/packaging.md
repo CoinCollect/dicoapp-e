@@ -17,10 +17,10 @@ This is how you easily package for Win/Linux from Linux:
     --env ELECTRON_CACHE="/root/.cache/electron" \
     --env ELECTRON_BUILDER_CACHE="/root/.cache/electron-builder" \
     -v ${PWD}:/project \
- -v${PWD##\*/}-node-modules:/project/node_modules \
+-v${PWD##\*/}-node-modules:/project/node_modules \
     -v ~/.cache/electron:/root/.cache/electron \
     -v ~/.cache/electron-builder:/root/.cache/electron-builder \
-    electronuserland/builder:wine /bin/bash -c "yarn && yarn dist"
+    electronuserland/builder:wine /bin/bash -c "yarn && ./node_modules/.bin/electron-builder -mwl"
 
 2. Done. Check your `release` directory.
 
