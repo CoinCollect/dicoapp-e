@@ -17,12 +17,12 @@ This app implements BarterDEX for doing decentralized ICO's, dICO's. It's config
 
 Download and install one of the following:
 
-- [Download AppImage for Linux](https://www.coincollect.cc/download/dICOApp-0.9.0.AppImage)
-- [Download deb for Linux](https://www.coincollect.cc/download/dicoapp-e_0.9.0_amd64.deb)
+- [Download AppImage for Linux](https://www.coincollect.cc/download/linux/dICOApp-0.9.0.AppImage)
+- [Download deb for Linux](https://www.coincollect.cc/download/linux/dicoapp-e_0.9.0_amd64.deb)
 
 **MacOS**
 
-- ...
+- [Download dmg for MacOS](https://www.coincollect.cc/download/mac/dICOApp-0.9.0.dmg)
 
 **Windows**
 
