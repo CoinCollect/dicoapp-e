@@ -68,7 +68,7 @@ class HelpPage extends Component<Props> {
                   navigate to the BUY tab and wait for order-books to sync
                 </li>
                 <li>
-                  When the order books are synced you will see the price per GLX
+                  When the order books are synced you will see the price per CC
                   Token and the order section will be enabled.
                 </li>
                 <li>
