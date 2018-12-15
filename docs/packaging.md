@@ -3,7 +3,15 @@
 ## To package app for the local platform:
 
 ```bash
-$ yarn package
+yarn package
+```
+
+## To package apps for MacOS
+
+On Mac, you can also do:
+
+```bash
+npm run package:mac
 ```
 
 ## To package apps for both Linux + Windows from a Linux machine
