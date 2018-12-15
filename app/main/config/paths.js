@@ -7,13 +7,12 @@ const { is } = util;
 // const debug = require('debug')('dicoapp:config:paths');
 
 const marketmakerPlatformPath = binDir => {
-  let suffix;
   switch (process.platform) {
     // MacOS
     case 'darwin':
-      if (is.development) suffix = 'marketmaker/mac/marketmaker';
-      else suffix = '../../marketmaker/mac/marketmaker';
-      return util.fixPathForAsarUnpack(resolve(binDir, suffix));
+      return util.fixPathForAsarUnpack(
+        resolve(binDir, 'marketmaker/mac/marketmaker')
+      );
     // Windows
     case 'win32':
       return util.fixPathForAsarUnpack(
@@ -26,9 +25,9 @@ const marketmakerPlatformPath = binDir => {
       );
     // MacOS
     default:
-      if (is.development) suffix = 'marketmaker/mac/marketmaker';
-      else suffix = '../../marketmaker/mac/marketmaker';
-      return util.fixPathForAsarUnpack(resolve(binDir, suffix));
+      return util.fixPathForAsarUnpack(
+        resolve(binDir, 'marketmaker/mac/marketmaker')
+      );
   }
 };
 
