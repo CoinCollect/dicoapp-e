@@ -22,7 +22,7 @@ For Linux, download one of the following:
 
 **MacOS**
 
-- [Download dmg for MacOS](https://www.coincollect.cc/download/mac/dICOApp-0.9.0.dmg)
+- [Download dmg for MacOS](https://www.coincollect.cc/download/mac/dICOApp-0.12.0.dmg)
 
 **Windows**
 
