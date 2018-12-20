@@ -1,8 +1,8 @@
 {
   "dicoapp.containers.BuyPage.title": "Buy",
-  "dicoapp.containers.BuyPage.currency": "Currency",
-  "dicoapp.containers.BuyPage.payment": "Payment Method",
-  "dicoapp.containers.BuyPage.amount": "Amount",
+  "dicoapp.containers.BuyPage.currency": "Currency to buy",
+  "dicoapp.containers.BuyPage.payment": "Your Payment Method",
+  "dicoapp.containers.BuyPage.amount": "Amount of CC to buy",
   "dicoapp.containers.BuyPage.select_payment": "SELECT YOUR PAYMENT",
   "dicoapp.containers.BuyPage.swap_successful_message": "Press here to make another swap",
   "dicoapp.containers.BuyPage.execute_buy": "Buy",
