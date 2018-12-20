@@ -172,6 +172,7 @@ class PaymentSection extends PureComponent<Props> {
             to use BTC for bigger transaction amounts only.
           </p>
         </div>
+        <br />
         {list.map(this.renderPaymentCoin)}
       </div>
     );

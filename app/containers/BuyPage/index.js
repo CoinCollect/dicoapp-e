@@ -42,6 +42,8 @@ import {
   makeSelectPricesEntities
 } from './selectors';
 
+let refreshInterval = null;
+
 const debug = require('debug')('dicoapp:containers:BuyPage');
 
 const styles = () => ({
@@ -110,7 +112,13 @@ class BuyPage extends Component<Props, State> {
     dispatchLoadBalance();
 
     // Auto refresh prices every 5 seconds
-    setInterval(() => this.onReloadPrices(), 5000);
+    refreshInterval = setInterval(() => this.onReloadPrices(), 5000);
+    // Clear interval after 120 seconds
+    setTimeout(() => clearInterval(refreshInterval), 120 * 1000);
+  };
+
+  componentWillUnmount = () => {
+    clearInterval(refreshInterval);
   };
 
   onReloadPrices = (evt: SyntheticInputEvent<>) => {
