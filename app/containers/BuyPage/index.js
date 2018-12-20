@@ -10,7 +10,6 @@ import { withStyles } from '@material-ui/core/styles';
 // import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-import LinearProgress from '@material-ui/core/LinearProgress';
 import Typography from '@material-ui/core/Typography';
 // import Divider from '@material-ui/core/Divider';
 import Icon from '@material-ui/core/Icon';
@@ -109,10 +108,13 @@ class BuyPage extends Component<Props, State> {
     const { dispatchLoadBalance } = this.props;
 
     dispatchLoadBalance();
+
+    // Auto refresh prices every 5 seconds
+    setInterval(() => this.onReloadPrices(), 5000);
   };
 
   onReloadPrices = (evt: SyntheticInputEvent<>) => {
-    evt.stopPropagation();
+    if (evt) evt.stopPropagation();
     const { dispatchLoadPrices } = this.props;
 
     dispatchLoadPrices();
@@ -153,7 +155,7 @@ class BuyPage extends Component<Props, State> {
         <Grid container spacing={0} className={classes.container}>
           <Grid item xs={12} className={classes.containerSection}>
             {/* <Card> */}
-            {loading && <LinearProgress />}
+            {loading && <div />}
             <CardContent className={classes.cardContent}>
               <Typography
                 variant="title"
