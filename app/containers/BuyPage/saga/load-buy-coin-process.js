@@ -110,7 +110,7 @@ export default function* loadBuyCoinProcess({ payload, time = intervalTime }) {
         if (result.error) {
           if (result.error === APPROPRIATE_ERROR_UTXOS) {
             throw new Error(
-              'Please try a different amount. You could also fund 1/2 or 2x the amount of your first funding transaction.'
+              'Please try a different amount. You could do an extra funding to your dICO wallet address.'
             );
           }
           throw new Error(result.error);
