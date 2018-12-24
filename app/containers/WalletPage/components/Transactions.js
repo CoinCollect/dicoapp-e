@@ -115,26 +115,27 @@ class Transactions extends PureComponent<Props> {
   renderRecord = (v, k) => {
     const { entities } = this.props;
     const t = entities.get(v);
+    console.log(t);
     if (!t) return null;
     return (
-      <TableRow key={t.get('tx_hash')}>
+      <TableRow key={t.get('txid')}>
         <TableCell>{k + 1}</TableCell>
         <TableCell>{t.get('coin')}</TableCell>
-        <TableCell>{t.get('height')}</TableCell>
+        <TableCell>{t.get('blockindex')}</TableCell>
         <TableCell>
           {/* eslint-disable-next-line react/jsx-no-target-blank */}
           {explorer[t.get('coin')] && (
             <a
               style={{ color: '#000' }}
-              href={`${explorer[t.get('coin')]}/${t.get('tx_hash')}`}
+              href={`${explorer[t.get('coin')]}/${t.get('txid')}`}
               // target="_blank"
               // rel="noopener noreferrer"
               onClick={this.onClickTranstactions}
             >
-              {t.get('tx_hash')}
+              {t.get('txid')}
             </a>
           )}
-          {!explorer[t.get('coin')] && t.get('tx_hash')}
+          {!explorer[t.get('coin')] && t.get('txid')}
         </TableCell>
       </TableRow>
     );
