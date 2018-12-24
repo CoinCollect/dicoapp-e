@@ -88,7 +88,13 @@ export default function* loadBuyCoinProcess({ payload, time = intervalTime }) {
             relvolume: relvolume.toFixed(8),
             price: price.get('bestPrice').toFixed(8)
           };
+
+          console.log('buyparams', buyparams);
+          console.log('api', api);
+
           const result = yield call([api, 'buy'], buyparams);
+          if (result.error) swal('Please topup your balance', result.error);
+          console.log('result', result);
 
           debug('UTXO autosplit TX INFO:', result);
           if (result.error) {
