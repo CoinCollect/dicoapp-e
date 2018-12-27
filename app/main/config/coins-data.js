@@ -5,6 +5,7 @@ const data = [
   {
     coin: 'KMD',
     name: 'Komodo',
+    txversion: 4,
     electrumServers: [
       {
         host: 'electrum1.cipig.net',

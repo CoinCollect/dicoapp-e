@@ -3,6 +3,7 @@ module.exports = {
   name: 'CoinCollect',
   asset: 'CCL',
   rpcport: 20849,
+  txversion: 4,
   electrumServers: [
     {
       host: 'electrum1.cipig.net',
