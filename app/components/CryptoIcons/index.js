@@ -3,6 +3,7 @@ import React from 'react';
 
 import AionIcon from './aion.svg';
 import BTCIcon from './btc.svg';
+import CCIcon from './cc.svg';
 import ETHIcon from './eth.svg';
 import CHIPSIcon from './chips.svg';
 import RDNIcon from './rdn.svg';
@@ -27,6 +28,7 @@ import UNKNOWIcon from './unknow.svg';
 export {
   AionIcon as AION,
   BTCIcon as BTC,
+  CCIcon as CC,
   ETHIcon as ETH,
   CHIPSIcon as CHIPS,
   BCHIcon as BCH,
@@ -52,6 +54,7 @@ export {
 const coins = {
   aion: AionIcon,
   btc: BTCIcon,
+  cc: CCIcon,
   eth: ETHIcon,
   chips: CHIPSIcon,
   bch: BCHIcon,
@@ -75,6 +78,7 @@ const coins = {
 
   AION: AionIcon,
   BTC: BTCIcon,
+  CC: CCIcon,
   ETH: ETHIcon,
   CHIPS: CHIPSIcon,
   BCH: BCHIcon,
@@ -100,6 +104,7 @@ const coins = {
 const coinsRender = {
   aion: <AionIcon />,
   btc: <BTCIcon />,
+  cc: <CCIcon />,
   eth: <ETHIcon />,
   chips: <CHIPSIcon />,
   bch: <BCHIcon />,
@@ -123,6 +128,7 @@ const coinsRender = {
 
   AION: <AionIcon />,
   BTC: <BTCIcon />,
+  CC: <CCIcon />,
   ETH: <ETHIcon />,
   CHIPS: <CHIPSIcon />,
   BCH: <BCHIcon />,
