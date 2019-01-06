@@ -1,18 +1,22 @@
 module.exports = {
-  coin: 'DSEC',
-  name: 'DEVSEC',
-  asset: 'DSEC',
-  rpcport: 11557,
+  coin: 'CC',
+  name: 'CoinCollect',
+  asset: 'CCL',
+  rpcport: 20849,
   electrumServers: [
     {
       host: 'electrum1.cipig.net',
-      port: 10027
+      port: 10029
     },
     {
       host: 'electrum2.cipig.net',
-      port: 10027
+      port: 10029
+    },
+    {
+      host: 'electrum3.cipig.net',
+      port: 10029
     }
   ],
-  pubkey: '2c8f6931843ae7729ad7fdd963541228c42cab8a855e8d7409fdab9efbe0f077',
+  pubkey: '90f44b66caae7e0d842a1a3e4f0b50e09d251a300987d85a9a7b136485744c09',
   active: 1
 };
