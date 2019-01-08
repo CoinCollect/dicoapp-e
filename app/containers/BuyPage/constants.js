@@ -23,10 +23,10 @@ export const TIME_LOOP = 20000;
 export const STATE_SWAPS = [
   'Confirming',
   'My Fee',
-  'Bob Deposit',
-  'Alice Payment',
-  'Bob Payment',
-  'Swap Finished' // 'Alice Spend'
+  'Seller Deposit',
+  'Buyer Payment',
+  'Seller Payment',
+  'Swap Finished! Congratulations!' // 'Alice Spend'
 ];
 
 // https://github.com/KomodoPlatform/Documentation/blob/master/docs/source/barterDEX/MarketmakerErrors.rst#marketmaker-error-codes
