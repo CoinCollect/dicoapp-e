@@ -134,7 +134,7 @@ type Props = {
   swapsList: List<*>,
   swapsEntities: Map<*, *>,
   // eslint-disable-next-line flowtype/no-weak-types
-  buyingError: boolean | Object,
+  // buyingError: boolean | Object,
   // eslint-disable-next-line flowtype/no-weak-types
   swapsError: boolean | Object,
   // eslint-disable-next-line flowtype/no-weak-types
@@ -171,36 +171,6 @@ class AmountSection extends Component<Props, State> {
     this.baseInput = React.createRef();
     this.paymentInput = React.createRef();
   }
-
-  static getDerivedStateFromProps = (props, state) => {
-    const { buyingError, swapsError } = props;
-    const { openSnackbar } = state;
-    if (openSnackbar === false && buyingError) {
-      return {
-        openSnackbar: true,
-        snackbarMessage: buyingError.message
-      };
-    }
-    if (openSnackbar === true && !buyingError) {
-      return {
-        openSnackbar: false,
-        snackbarMessage: ''
-      };
-    }
-    if (openSnackbar === false && swapsError) {
-      return {
-        openSnackbar: true,
-        snackbarMessage: swapsError.message
-      };
-    }
-    if (openSnackbar === true && !swapsError) {
-      return {
-        openSnackbar: false,
-        snackbarMessage: ''
-      };
-    }
-    return null;
-  };
 
   componentDidMount = () => {
     const { dispatchLoadRecentSwaps } = this.props;
@@ -239,6 +209,39 @@ class AmountSection extends Component<Props, State> {
       this.checkSwapStatusLoops = null;
     }
     this.clearHandleTimeoutError();
+  };
+
+  getSnackbarInfo = (props, state) => {
+    const { buyingError, swapsError } = props;
+    const { openSnackbar } = state;
+    if (openSnackbar === false && buyingError) {
+      return {
+        openSnackbar: true,
+        snackbarMessage: buyingError.message
+      };
+    }
+    if (openSnackbar === true && !buyingError) {
+      return {
+        openSnackbar: false,
+        snackbarMessage: ''
+      };
+    }
+    if (openSnackbar === false && swapsError) {
+      return {
+        openSnackbar: true,
+        snackbarMessage: swapsError.message
+      };
+    }
+    if (openSnackbar === true && !swapsError) {
+      return {
+        openSnackbar: false,
+        snackbarMessage: ''
+      };
+    }
+    return {
+      openSnackbar: false,
+      snackbarMessage: ''
+    };
   };
 
   clearCheckSwapStatusLoops = () => {
@@ -549,7 +552,10 @@ class AmountSection extends Component<Props, State> {
   render() {
     debug(`render`);
     const { classes, swapsList } = this.props;
-    const { openSnackbar, snackbarMessage } = this.state;
+    const { openSnackbar, snackbarMessage } = this.getSnackbarInfo(
+      this.props,
+      this.state
+    );
 
     return (
       <div className={classes.amountform}>
