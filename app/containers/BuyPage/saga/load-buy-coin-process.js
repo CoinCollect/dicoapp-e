@@ -104,7 +104,9 @@ export default function* loadBuyCoinProcess({ payload, time = intervalTime }) {
         const result = yield call([api, 'buy'], buyparams);
         if (result.error) {
           if (result.error === APPROPRIATE_ERROR_UTXOS) {
-            throw new Error('Please try a different amount to pay (1/2 or 2x)');
+            throw new Error(
+              "With the 2 UTXO's you have now you can't perform this swap. Please try a different amount, otherwise do an extra funding to your dICO wallet address."
+            );
           }
           throw new Error(result.error);
         }
