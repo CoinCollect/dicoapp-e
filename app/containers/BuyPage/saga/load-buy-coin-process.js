@@ -71,9 +71,15 @@ export default function* loadBuyCoinProcess({ payload, time = intervalTime }) {
         debug('splitting utxos');
         if (!isSplittingTheFund) {
           // FIXED ME: This is UI code. We should move it to somewhere else (react component).
+          let suffixText = '';
+          if (paymentcoin === 'BTC') {
+            suffixText = 'For BTC this takes ~ 60 minutes.';
+          } else {
+            suffixText = 'For KMD this takes ~ 6 minutes.';
+          }
           swal(
             'Splitting Procedure',
-            'You will need at least 2 UTXOs to perform your swap. We are trying to split it for you. Dont turn off the application.'
+            `You will need at least 2 UTXOs to perform your swap. We are trying to split it for you. Don't turn off the application. PS Please wait 6 blocks before you do a Buy. ${suffixText}`
           );
           const buyparams = {
             userpass,
@@ -82,6 +88,7 @@ export default function* loadBuyCoinProcess({ payload, time = intervalTime }) {
             relvolume: relvolume.toFixed(8),
             price: price.get('bestPrice').toFixed(8)
           };
+
           const result = yield call([api, 'buy'], buyparams);
           if (result.error) swal('Please topup your balance', result.error);
 
