@@ -271,7 +271,9 @@ class AmountSection extends Component<Props, State> {
   handleTimeoutError = () => {
     this.clearCheckSwapStatusLoops();
     const { dispatchLoadRecentSwapsError } = this.props;
-    dispatchLoadRecentSwapsError('Timeout');
+    dispatchLoadRecentSwapsError(
+      'Timeout. Please try an other amount. On the side of CoinCollect there was a "quote CC/KMD validate error -3"'
+    );
   };
 
   closeSnackbar = (evt, reason) => {
