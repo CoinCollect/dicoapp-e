@@ -155,7 +155,7 @@ class PaymentSection extends PureComponent<Props> {
           <p>
             Wait a few moments so that you can start buying the coins from this
             decentralized network. The coins below will become clickable in less
-            then 1 minute. If not: restart the app.
+            then 2 minutes. If not: restart the app.
           </p>
         </div>
         <div>

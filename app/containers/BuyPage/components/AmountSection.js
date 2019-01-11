@@ -272,7 +272,7 @@ class AmountSection extends Component<Props, State> {
     this.clearCheckSwapStatusLoops();
     const { dispatchLoadRecentSwapsError } = this.props;
     dispatchLoadRecentSwapsError(
-      'Timeout. Please try an other amount. On the side of CoinCollect there was a "quote CC/KMD validate error -3"'
+      "We had a timeout, sorry. Might have something to do with your UTUXO's. Please try an other amount, or fund another UTXO."
     );
   };
 
