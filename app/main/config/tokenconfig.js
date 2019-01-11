@@ -2,6 +2,7 @@ module.exports = {
   coin: 'CC',
   name: 'CoinCollect',
   asset: 'CCL',
+  txversion: 4,
   rpcport: 20849,
   electrumServers: [
     {
