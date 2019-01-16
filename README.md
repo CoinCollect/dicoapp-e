@@ -21,7 +21,7 @@ For Linux, download this AppImage, make the file executable and open it afterwar
 
 **MacOS**
 
-- [Download dmg for MacOS](https://www.coincollect.cc/download/mac/dICOApp-0.12.0.dmg)
+- [Download dmg for MacOS](https://www.coincollect.cc/download/mac/dICOApp-0.9.0.dmg)
 
 **Windows**
 
